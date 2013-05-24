@@ -10,11 +10,11 @@ import org.apache.http.impl.client.DefaultHttpClient;
 public class MerckLyrisMailSender {
     public final static void main(String[] args) throws Exception {
 
-       HttpClient httpclient = new DefaultHttpClient();
+       HttpClient httpclient = new HttpClientt();
        HttpHost proxy = new HttpHost("54.30.228.195", 8080);
        httpclient.getParams().setParameter(ConnRoutePNames.DEFAULT_PROXY, proxy);
         try {
-            HttpGet httpget = new HttpGet("http://uat-us.email.msd.com/helpdesk/sendanon?email=toby@creator.co.uk&c=1188&rn=Toby%20Beaumont&uid=tobybeaumont&pwd=test123&spe=Cardiology");
+            HttpGet httpget = new HttpGet("www.google.com");
 
             System.out.println("executing request " + httpget.getURI());
 
